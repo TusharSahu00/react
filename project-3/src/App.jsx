@@ -1,14 +1,11 @@
-import styled from "styled-components";
-
-
-function App() {
-  return <Button>this is tyled component btton</Button>;
+ import StartGame from "./components/StartGame";
+ 
+ 
+function App()  {
+return(
+  <StartGame />
+);
 }
 
 export default App;
-
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  padding: 10px;
-`;
+ 
