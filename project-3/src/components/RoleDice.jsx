@@ -1,20 +1,9 @@
 import { styled } from "styled-components";
 
-const RoleDice = ({currentDice, setCurrentDice}) => {
-  
-
-  const generateRandomnumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min) + min);
-  };
-
-  const roleDice = () => {
-    const randomNumber = generateRandomnumber(1, 7);
-    setCurrentDice((prev) => randomNumber);
-  };
-
+const RoleDice = ({ roleDice, currentDice }) => {
   return (
     <DiceContainer>
-      <div className="dice" onClick = {roleDice}>
+      <div className="dice" onClick={roleDice}>
         <img src={`./dices/dice_${currentDice}.png`} alt="dice1" />
       </div>
       <p>Click on Dice to roll</p>
